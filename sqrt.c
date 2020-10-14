@@ -19,12 +19,22 @@ int main(int argc, char* argv[]) {
 	{
 		if(!isdigit(argv[1][i - 1]))
 			flag = 0;
+		if(i == 1 && argv[1][0] == '-')
+			flag = 1;
 	}
 
 	int input = atoi(argv[1]);
 	if(flag)
 	{
-		printf("Sqrt of %d is %f\n",input,sqrt(input));
+		if(input > 0)
+		{
+			printf("Sqrt of %d is %f\n",input,sqrt(input));
+		}
+		else
+		{
+			input *= -1;
+			printf("Sqrt of %d is %fi\n",input*-1,sqrt(input));
+		}
 	}
 	else
 	{
