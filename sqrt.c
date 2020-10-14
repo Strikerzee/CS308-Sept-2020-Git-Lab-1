@@ -13,7 +13,7 @@ int main(int argc, char* argv[]) {
 		printf("Usage: sqrt input\n\n");
 		exit(-1);
 	}
-
+	// ConfBrNegSupport
 	int i = 0, flag = 1;
 	while(argv[1][i++] != '\0')
 	{
