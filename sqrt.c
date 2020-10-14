@@ -22,7 +22,6 @@ int main(int argc, char* argv[]) {
 		if(i == 1 && argv[1][0] == '-')
 			flag = 1;
 	}
-
 	int input = atoi(argv[1]);
 	if(flag)
 	{
