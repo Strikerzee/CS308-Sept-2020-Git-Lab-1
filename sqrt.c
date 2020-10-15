@@ -10,7 +10,7 @@ positive number. */
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 	// ConfBrNegSupport
@@ -27,19 +27,18 @@ int main(int argc, char* argv[]) {
 	{
 		if(input > 0)
 		{
-			printf("Sqrt of %d is %f\n",input,sqrt(input));
+			printf("NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
 		}
 		else
 		{
 			input *= -1;
-			printf("Sqrt of %d is %fi\n",input*-1,sqrt(input));
+			printf("NEGSUPPORT:Sqrt of %d is %fi\n",input*-1,sqrt(input));
 		}
 	}
 	else
 	{
-		printf("Given input is not a number.\n");
+		printf("NEGSUPPORT:Given input is not a number.\n");
 	}
-	printf("End of program. Exiting.\n");
 	return(0);
 
 } // end main
